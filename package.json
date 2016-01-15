@@ -1,6 +1,7 @@
 {
   "name": "apitest",
   "version": "0.0.0",
+  "description": "holds watched movies",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -12,6 +13,13 @@
     "express": "~4.13.1",
     "hbs": "~3.1.0",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
-  }
+    "serve-favicon": "~2.3.0",
+    "request": "~2.x.x",
+    "browserify": "~13.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wakr/MyWatchedMovies"
+  },
+  "analyze" : true
 }

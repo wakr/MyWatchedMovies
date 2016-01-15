@@ -6,12 +6,12 @@ var Movie = require('../models/Movie.js');
 
 movies = [];
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
     res.render('movies/index', {movies: this.movies});
 });
 
 
-router.post('/', function(req,res,next){
+router.post('/', function(req,res){
 
         var new_movie = new Movie(req.body.first_name, req.body.date_watched);
         movies.push(new_movie);
