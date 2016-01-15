@@ -1,7 +1,7 @@
-<p>You have watched:</p>
+<h1 class="page-header">You have watched</h1>
 
-<ul>
-{{#each movies}}
-    <li>{{this.getName}} - {{this.getDate}}</li>
+<div class="list-group">
+    {{#each movies}}
+        <a href={{this.getName}} class="list-group-item">{{this.getName}} - {{this.getDate}}</a>
     {{/each}}
-</ul>
+</div>

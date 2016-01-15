@@ -17,7 +17,8 @@
     "request": "~2.x.x",
     "browserify": "~13.x.x",
     "bootstrap": "*",
-    "browserify": "*"
+    "browserify": "*",
+    "jquery": "*"
   },
   "repository": {
     "type": "git",

@@ -2,10 +2,19 @@
 <html>
 <head>
     <title>{{title}}</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-{{{body}}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        {{{body}}}
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+<script src="/scripts/jquery/dist/jquery.min.js"></script>
+<script src="/javascripts/bundle.js"></script>
 </body>
 </html>

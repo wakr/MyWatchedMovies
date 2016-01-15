@@ -1,14 +1,14 @@
-<div class="jumbotron">
-    <h1>{{title}}</h1>
-</div>
+<h1 class="page-header">{{title}}</h1>
 
 <form action="/movies" method="post">
-    Name: <label>
-    <input type="text" name="first_name">
-</label> <br>
-    Watched: <label>
-    <input type="date" name="date_watched">
-</label> <br>
-    <input type="submit">
-</form>
+    <div class="form-group">
+        <label for="nameField">Movie name</label>
+        <input type="text" name="first_name" id="nameField" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="dateField">Date when watched</label>
+        <input type="date" name="date_watched" id="dateField" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-default">Add</button>
 
+</form>
