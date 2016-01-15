@@ -1,17 +1,16 @@
+var mongoose = require('mongoose');
+
+var movieSchema = mongoose.Schema(
+    {
+        name: String,
+        date: {type: Date, default: Date.now}
+    });
+
+/**
+ * Movie-model that abstracts the database objects
+ */
+var MovieModel = mongoose.model('Movie', movieSchema);
+
+module.exports = MovieModel;
 
 
-// Movie-model to abstract database objects
-function Movie(name, date){
-    this._name = name;
-    this._date = date;
-
-    this.getName = function(){
-        return this._name;
-    };
-
-    this.getDate = function () {
-        return this._date;
-    };
-}
-
-module.exports = Movie;

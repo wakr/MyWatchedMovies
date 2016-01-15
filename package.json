@@ -18,7 +18,8 @@
     "browserify": "~13.x.x",
     "bootstrap": "*",
     "browserify": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "mongoose": "*"
   },
   "repository": {
     "type": "git",
