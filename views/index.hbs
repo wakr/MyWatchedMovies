@@ -1,9 +1,14 @@
-<h1>{{title}}</h1>
-
+<div class="jumbotron">
+    <h1>{{title}}</h1>
+</div>
 
 <form action="/movies" method="post">
-    Name: <input type="text" name="first_name"> <br>
-    Watched: <input type="date" name="date_watched"> <br>
+    Name: <label>
+    <input type="text" name="first_name">
+</label> <br>
+    Watched: <label>
+    <input type="date" name="date_watched">
+</label> <br>
     <input type="submit">
 </form>
 
