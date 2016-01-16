@@ -2,6 +2,6 @@
 
 <div class="list-group">
     {{#each movies}}
-        <a href={{this.name}} class="list-group-item">{{this.name}} - {{this.date}}</a>
+        <a href="/movies/{{this.id}}" class="list-group-item">{{this.name}} - {{prettifyDate this.date}}</a>
     {{/each}}
 </div>

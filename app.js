@@ -4,8 +4,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+var main = require('./routes/index');
 var movies = require('./routes/movies');
+
+var helpers = require('./lib/HandlebarHelpers');
 
 var app = express();
 
@@ -22,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // prefixes for loading modules
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
-app.use('/', routes);
+app.use('/', main);
 app.use('/movies', movies);
 
 // catch 404 and forward to error handler
