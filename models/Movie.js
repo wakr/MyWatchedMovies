@@ -3,7 +3,9 @@ var mongoose = require('mongoose');
 var movieSchema = mongoose.Schema(
     {
         name: String,
-        date: {type: Date, default: Date.now}
+        date: {type: Date, default: Date.now},
+        description: String,
+        posterUrl: String
     });
 
 /**

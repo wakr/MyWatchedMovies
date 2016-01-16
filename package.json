@@ -19,7 +19,8 @@
     "bootstrap": "*",
     "browserify": "*",
     "jquery": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "figaro": "*"
   },
   "repository": {
     "type": "git",
