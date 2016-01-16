@@ -47,7 +47,8 @@ router.post('/', function(req,res){
 // Forms a movie-object from the request
 getMovieDataFrom = function(foundMovie, dateWatched){
   return {name:foundMovie.title, date: dateWatched,
-      description: foundMovie.overview, posterUrl: foundMovie.poster_path};
+      description: foundMovie.overview, yearMade: foundMovie.release_date,
+      posterUrl: foundMovie.poster_path};
 };
 
 module.exports = router;

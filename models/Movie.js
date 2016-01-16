@@ -5,6 +5,7 @@ var movieSchema = mongoose.Schema(
         name: String,
         date: {type: Date, default: Date.now},
         description: String,
+        yearMade: String,
         posterUrl: String
     });
 
