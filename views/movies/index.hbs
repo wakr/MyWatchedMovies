@@ -1,4 +1,8 @@
-<h1 class="page-header">You have watched</h1>
+{{#if movies}}
+    <h1 class="page-header">You have watched</h1>
+{{else}}
+    <h1 class="page-header">No movies added yet</h1>
+{{/if}}
 
 <div class="list-group">
     {{#each movies}}

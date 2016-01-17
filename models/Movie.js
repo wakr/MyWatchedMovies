@@ -10,7 +10,8 @@ var movieSchema = mongoose.Schema(
     });
 
 /**
- * Movie-model that abstracts the database objects
+ * Movie-model that abstracts the database objects.
+ * Fields: name, date, description, yearMade and posterUrl
  */
 var MovieModel = mongoose.model('Movie', movieSchema);
 
