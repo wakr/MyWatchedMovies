@@ -4,27 +4,33 @@
   "description": "holds watched movies",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "init_figaro": "./node_modules/.bin/figaro --setup",
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
+    "bootstrap": "*",
+    "browserify": "*",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
     "express": "~4.13.1",
+    "figaro": "^0.1.9",
     "hbs": "~3.1.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
-    "request": "~2.x.x",
-    "browserify": "~13.x.x",
-    "bootstrap": "*",
-    "browserify": "*",
     "jquery": "*",
+    "mongod": "^1.3.0",
     "mongoose": "*",
-    "figaro": "*"
+    "morgan": "~1.6.1",
+    "request": "~2.x.x",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/wakr/MyWatchedMovies"
   },
-  "analyze" : true
+  "analyze": true
 }
