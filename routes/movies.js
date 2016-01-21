@@ -3,7 +3,7 @@ var router = express.Router();
 
 // Database-connections
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/apitest');
+mongoose.connect(process.env.MONGOLAB_URI);
 
 // model dependencies
 var Movie = require('../models/Movie.js');
